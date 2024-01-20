@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../js/booksUser1.js"></script>
+    <title>Книги</title>
+    <link rel="stylesheet" type="text/css" href="../css/booksUser.css">
+</head>
+<body onload="getAllExamples()">
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="../html/profileUser.html">Профиль</a></li>
+            <li><a href="../html/booksUser.html">Книги</a></li>
+            <li><a href="../html/ordersUser.html">Мои заказы</a></li>
+            <li><a href="../html/vacanciesUser.html">Вакансии</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Все книги</h1>
+        <button onclick="createOrder()">Оформить заказ</button>
+        <table id="examplesTable">
+            <thead>
+                <tr>
+                    <th>guid</th>
+                    <th>шифр</th>
+                    <th>название</th>
+                    <th>автор</th>
+                    <th>жанр</th>
+                    <th>тип</th>
+                    <th>издательство</th>
+                    <th>год выпуска</th>
+                    <th>статус</th>
+                    <th>Выбрать</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Сюда будут добавлены данные из JavaScript -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../js/booksAdmin2.js"></script>
+    <title>Книги</title>
+    <link rel="stylesheet" type="text/css" href="../css/booksAdmin.css">
+</head>
+<body onload="getAll()">
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="../html/profileAdmin.html">Профиль</a></li>
+            <li><a href="../html/booksAdmin.html">Книги</a></li>
+            <li><a href="../html/ordersAdmin.html">Заказы</a></li>
+            <li><a href="../html/vacanciesAdmin.html">Вакансии</a></li>
+        </ul>
+    </div>
+    <div class="mainContent">
+        <div class="content">
+            <div class="tbl">
+                <h3>Авторы</h3>
+                <div class="microClass">
+                    <input type="text" id="authorForAdding">
+                    <button onclick="addAuthor()">Добавить автора</button>
+                    <button onclick="deleteAuthors()">Удалить выбранных</button>
+                </div>
+                <table id="authorsTable">
+                    <thead>
+                        <tr>
+                            <th>Guid</th>
+                            <th>Автор</th>
+                            <th>Выбрать</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Сюда будут добавлены данные из JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="tbl">
+                <h3>Жанры</h3>
+                <div class="microClass">
+                    <input type="text" id="genreForAdding">
+                    <button onclick="addGenre()">Добавить жанр</button>
+                    <button onclick="deleteGenres()">Удалить выбранные</button>
+                </div>
+                <table id="genresTable">
+                    <thead>
+                        <tr>
+                            <th>Guid</th>
+                            <th>Жанр</th>
+                            <th>Выбрать</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Сюда будут добавлены данные из JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="tbl">
+                <h3>Типы</h3>
+                <div class="microClass">
+                    <input type="text" id="typeBkForAdding">
+                    <button onclick="addTypeBk()">Добавить тип</button>
+                    <button onclick="deleteTypesBk()">Удалить выбранные</button>
+                </div>
+                <table id="typesBkTable">
+                    <thead>
+                        <tr>
+                            <th>Guid</th>
+                            <th>Тип</th>
+                            <th>Выбрать</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Сюда будут добавлены данные из JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+           
+        </div>
+        <div class="content">
+            <div class="tbl">
+                <h3>Книги</h3>
+                <div class="microClass">
+                    <label for="EnterShifr">Шифр:</label>
+                    <input type="text" id="shifrForAdding">
+                    <label for="EnterNameOfBook">Название книги:</label>
+                    <input type="text" id="nameOfBookForAdding">
+                    <button onclick="addBook()">Добавить книгу</button>
+                    <button onclick="deleteBooks()">Удалить выбранные</button>
+                </div>
+                <table id="booksTable">
+                    <thead>
+                        <tr>
+                            <th>Guid</th>
+                            <th>Шифр</th>
+                            <th>Название</th>
+                            <th>Авторы</th>
+                            <th>Жанры</th>
+                            <th>Типы</th>
+                            <th>Выбрать</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Сюда будут добавлены данные из JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="tbl">
+                <h3>Издательства</h3>
+                <div class="microClass">
+                    <input type="text" id="publisherForAdding">
+                    <button onclick="addPublisher()">Добавить издательство</button>
+                    <button onclick="deletePublishers()">Удалить выбранные</button>
+                </div>
+                <table id="publishersTable">
+                    <thead>
+                        <tr>
+                            <th>Guid</th>
+                            <th>Название</th>
+                            <th>Выбрать</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Сюда будут добавлены данные из JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+            <h1>Все экземпляры</h1>
+            <div class="microClass">
+                <label for="YearOfCreation">Год выпуска:</label>
+                <input type="text" id="yearOfCreationForAdding">
+                <button onclick="addExample()">Добавить экземпляр</button>
+                <button onclick="deleteExamples()">Удалить выбранные</button>
+                <button onclick="createOrder()">Оформить заказ</button>
+            </div>
+            <table id="examplesTable">
+                <thead>
+                    <tr>
+                        <th>Guid</th>
+                        <th>Шифр</th>
+                        <th>Название</th>
+                        <th>Автор</th>
+                        <th>Жанр</th>
+                        <th>Тип</th>
+                        <th>Издательство</th>
+                        <th>Год выпуска</th>
+                        <th>Статус</th>
+                        <th>Выбрать</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Сюда будут добавлены данные из JavaScript -->
+                </tbody>
+            </table>
+        </div>
+</body>
+</html>

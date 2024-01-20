@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../js/ordersAdmin1.js"></script>
+    <title>Мои заказы</title>
+    <link rel="stylesheet" type="text/css" href="../css/ordersUser.css">
+</head>
+<body onload="getAllOrders()">
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="../html/profileAdmin.html">Профиль</a></li>
+            <li><a href="../html/booksAdmin.html">Книги</a></li>
+            <li><a href="../html/ordersAdmin.html">Заказы</a></li>
+            <li><a href="../html/vacanciesAdmin.html">Вакансии</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Все заказы</h1>
+        <button onclick="closeOrders()">Закрыть выбранные заказы</button>
+        <table id="ordersTable">
+            <thead>
+                <tr>
+                    <th>Guid заказа</th>
+                    <th>Guid экземпляра</th>
+                    <th>Логин пользователя</th>
+                    <th>шифр</th>
+                    <th>название</th>
+                    <th>автор</th>
+                    <th>жанр</th>
+                    <th>тип</th>
+                    <th>издательство</th>
+                    <th>год выпуска</th>
+                    <th>статус</th>
+                    <th>Выбрать</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Сюда будут добавлены данные из JavaScript -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

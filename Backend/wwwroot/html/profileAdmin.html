@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Профиль пользователя</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="../js/profile1.js"></script>
+</head>
+<body onload="getUserData()">
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="../html/profileAdmin.html">Профиль</a></li>
+            <li><a href="../html/booksAdmin.html">Книги</a></li>
+            <li><a href="../html/ordersAdmin.html">Заказы</a></li>
+            <li><a href="../html/vacanciesAdmin.html">Вакансии</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Данные пользователя</h1>
+        <form>
+            <div class="form-row">
+                <label for="emailData">Email:</label>
+                <label id="emailData" name="emailData"></label>
+            </div>
+            <div class="form-row">
+                <label for="nameData">Имя:</label>
+                <label id="nameData" name="nameData"></label>
+            </div>
+            <div class="form-row">
+                <label for="surnameData">Фамилия:</label>
+                <label id="surnameData" name="surnameData"></label>
+            </div>
+            <div class="form-row">
+                <label for="otchestvoData">Отчество:</label>
+                <label id="otchestvoData" name="otchestvoData"></label>
+            </div>
+            <div class="form-row">
+                <label for="loginData">Логин:</label>
+                <label id="loginData" name="loginData"></label>
+            </div>
+            <div class="form-row">
+                <label for="addressData">Адрес:</label>
+                <label id="addressData" name="addressData"></label>
+            </div>
+            <div class="form-row">
+                <label for="phoneNumberData">Номер телефона:</label>
+                <label id="phoneNumberData" name="phoneNumberData"></label>
+            </div>
+            <div class="form-row">
+                <label for="ageData">Возраст:</label>
+                <label id="ageData" name="ageData"></label>
+            </div>
+            <div class="form-row">
+                <button type="button" onclick="localStorage.clear(); document.location='../html/home.html'">Выйти из аккаунта</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="content">
+        <h1>Изменить данные</h1>
+        <form id="profileForm">
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="emailIn" name="emailIn" required>
+            </div>
+            <div class="form-row">
+                <label for="name">Имя:</label>
+                <input type="text" id="nameIn" name="nameIn" required>
+            </div>
+            <div class="form-row">
+                <label for="surname">Фамилия:</label>
+                <input type="text" id="surnameIn" name="surnameIn" required>
+            </div>
+            <div class="form-row">
+                <label for="otchestvo">Отчество:</label>
+                <input type="text" id="otchestvoIn" name="otchestvoIn" required>
+            </div>
+            <div class="form-row">
+                <label for="login">Логин:</label>
+                <input type="text" id="loginIn" name="loginIn" required>
+            </div>
+            <div class="form-row">
+                <label for="password">Пароль:</label>
+                <input type="password" id="passwordIn" name="passwordIn" required>
+            </div>
+            <div class="form-row">
+                <label for="address">Адрес:</label>
+                <input type="text" id="addressIn" name="addressIn" required>
+            </div>
+            <div class="form-row">
+                <label for="phoneNumber">Номер телефона:</label>
+                <input type="tel" id="phoneNumberIn" name="phoneNumberIn" required>
+            </div>
+            <div class="form-row">
+                <label for="age">Возраст:</label>
+                <input type="number" id="ageIn" name="ageIn" required>
+            </div>
+            <button type="submit" onclick="updateUser()">Сохранить</button>
+        </form>
+    </div>
+
+</body>
+</html>

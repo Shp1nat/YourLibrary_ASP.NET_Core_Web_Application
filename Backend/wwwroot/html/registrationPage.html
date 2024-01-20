@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Регистрация</title>
+    <script src="../js/anyUser.js"></script>
+</head>
+<body>
+    <h1>Регистрация</h1>
+    <form id="registrationForm">
+        <label for="loginLb">Логин:</label>
+        <input type="text" id="login" name="login" required>
+
+        <label for="passwordLb">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="emailLb">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <br>
+        <div>
+            <button onclick="RegisterUser()">Зарегистрироваться</button>
+            <button type="button" onclick="document.location='../html/homePage.html'">Страница авторизации</button>
+        </div>
+    </form>
+</body>
+</html>

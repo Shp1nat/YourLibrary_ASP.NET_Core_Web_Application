@@ -1,0 +1,64 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #f5f5f5;
+    border-right: 1px solid #ccc;
+}
+
+.microClass {
+    display: flex;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .menu li {
+        padding: 10px;
+    }
+
+        .menu li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+.content {
+    display: flex;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+#examplesTable, #genresTable, #authorsTable, #typesBkTable, #booksTable, #publishersTable {
+    border-collapse: collapse;
+
+}
+
+    #examplesTable th,
+    #examplesTable td,
+    #genresTable th,
+    #genresTable td,
+    #authorsTable th,
+    #authorsTable td,
+    #typesBkTable th,
+    #typesBkTable td,
+    #booksTable th,
+    #booksTable td,
+    #publishersTable th,
+    #publishersTable td {
+        border: 1px solid #000;
+        padding: 5px;
+    }
+
+
+
+table {
+    margin-right: 20px;
+}

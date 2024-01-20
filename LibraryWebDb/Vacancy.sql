@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Vacancy]
+(
+	[idVacancy] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	[UidVacancy] UNIQUEIDENTIFIER NOT NULL UNIQUE,
+	[Text] NVARCHAR(MAX) NULL,
+	[idUser] INT NOT NULL FOREIGN KEY REFERENCES [dbo].[User](idUser),
+	[StatusOfVacancy] INT NULL DEFAULT 0
+)

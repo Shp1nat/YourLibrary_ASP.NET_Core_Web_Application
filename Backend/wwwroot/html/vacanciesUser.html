@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../js/vacanciesUser1.js"></script>
+    <title>Мои вакансии</title>
+    <link rel="stylesheet" type="text/css" href="../css/vacanciesUser.css">
+</head>
+<body onload="getVacancies()">
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="../html/profileUser.html">Профиль</a></li>
+            <li><a href="../html/booksUser.html">Книги</a></li>
+            <li><a href="../html/ordersUser.html">Мои заказы</a></li>
+            <li><a href="../html/vacanciesUser.html">Вакансии</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Создать вакансию</h1>
+        <form id="createVacancyForm">
+            <textarea id="vacancyText" placeholder="Введите текст вакансии"></textarea>
+            <button type="button" onclick="createVacancy()">Создать вакансию</button>
+        </form>
+        <h1>Мои вакансии</h1>
+        <table id="vacanciesTable">
+            <thead>
+                <tr>
+                    <th>guid вакансии</th>
+                    <th>Текст</th>
+                    <th>Статус вакансии</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Сюда будут добавлены данные из JavaScript -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

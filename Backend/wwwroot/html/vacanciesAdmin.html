@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../js/vacanciesAdmin1.js"></script>
+    <title>Вакансии</title>
+    <link rel="stylesheet" type="text/css" href="../css/vacanciesAdmin.css">
+</head>
+<body onload="getVacancies()">
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="../html/profileAdmin.html">Профиль</a></li>
+            <li><a href="../html/booksAdmin.html">Книги</a></li>
+            <li><a href="../html/ordersAdmin.html">Заказы</a></li>
+            <li><a href="../html/vacanciesAdmin.html">Вакансии</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Все вакансии</h1>
+        <button onclick="acceptVacancies()">Принять вакансии</button>
+        <button onclick="rejectVacancies()">Отклонить вакансии</button>
+        <table id="vacanciesTable">
+            <thead>
+                <tr>
+                    <th>Guid вакансии</th>
+                    <th>Логин пользователя</th>
+                    <th>Почта пользователя</th>
+                    <th>Текст</th>
+                    <th>Статус вакансии</th>
+                    <th>Выбрать</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Сюда будут добавлены данные из JavaScript -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

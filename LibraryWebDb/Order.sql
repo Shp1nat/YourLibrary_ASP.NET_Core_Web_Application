@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Order]
+(
+	[idOrder] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	[UidOrder] UNIQUEIDENTIFIER NOT NULL UNIQUE,
+	[idExample] INT NOT NULL FOREIGN KEY REFERENCES [dbo].[Example](idExample),
+	[idUser] INT NOT NULL FOREIGN KEY REFERENCES [dbo].[User](idUser),
+	[IsBack] BIT NOT NULL 
+)

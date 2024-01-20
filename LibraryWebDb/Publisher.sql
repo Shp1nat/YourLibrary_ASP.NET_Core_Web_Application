@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Publisher]
+(
+	[idPublisher] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	[UidPublisher] UNIQUEIDENTIFIER NOT NULL UNIQUE,
+	[NameOfPublisher] NVARCHAR(256) NOT NULL UNIQUE
+)
